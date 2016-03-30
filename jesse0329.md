@@ -17,7 +17,7 @@
 	可以让rootVC的导航VC使用自己建的类。在里边设置leftview（注意：程序会先执行VC的viewDidLoad再执行这个代理）
 	- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 	
-###6.记得当多个不同的VC中都用到了相似的Tableview时，记得把delegate和datasource设置为一个单独的VC，这样不用每个使用Tableview的VC都写那几个够够的数据源方法。
+###6.记得当多个不同的VC中都用到了相似的Tableview时，记得把delegate和datasource设置为一个单独的VC(!!!!注意这个VC的引用，没设置属性引用的话 return cell；代理方法不执行!!!!)，这样不用每个使用Tableview的VC都写那几个够够的数据源方法。
 
 ----
 ##亲身体验:
