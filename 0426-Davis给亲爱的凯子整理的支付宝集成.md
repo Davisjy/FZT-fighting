@@ -1,6 +1,7 @@
 <code>
 ###给亲爱的凯子整理的支付宝集成
 * 将alipaySDK导入工程
+* 在【Build Settings】里面搜Header search path 里面写绝对路径（$(SRCROOT)/01-AliPay/alipaySDK）
 * 在【Build Settings】里面搜Enable Bitcode 我这里设置的是NO，但是我不知道为什么官方的给的是YES
 * 添加依赖库![image](https://github.com/Davisjy/images4Gif/blob/master/%E4%BE%9D%E8%B5%96%E5%BA%93.png)
 * 在info里面添加LSApplicationQueriesSchemes这个键，对应的数组里面存放alipay
